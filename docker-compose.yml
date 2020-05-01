@@ -6,3 +6,7 @@ services:
       - ADMIN_KEY=ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAABAQDPO2bpmikq+rllwBa6dsZR/FFDG11BF/GqRW7yXgHbdPltY6RjMKjjA+dpwRy7VZKzvinLl89aEn7kTpimhUUWwY+U/fJ1alnE9zzCWHtRF+czmgvxwjnmh8+l+K90zmmdFITV+k0mLgtlHKbsnN4XyUniyPj8ge00CnLDPYwLxTB7MPAc/KvNgNBKUO+60D4qqvoUIvUNLG2hMCyX/1I9sJzMAN1Mihz0B4iMfMfuYjjfwQ4+KAq+gMHnv3TesYZe+yoZOn+rkKXf2S3PUiLDHP06QIKHghPeOvS1RuxtwtcDlS7X9sjtj42UQ/G8iiHLXy306Zm7UI6JqGTPw93V bernd@glyfada
     ports:
       - "2222:22"
+    volumes:
+      - gitdata:/home/git
+volumes:
+  gitdata:
